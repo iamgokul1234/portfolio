@@ -75,8 +75,8 @@
             about turning ideas into real-world solutions with clean code and
             responsive design.
           </p>
-          <button  class="hero-button">
-            View my work
+          <button class="hero-button" onclick="document.getElementById('project').scrollIntoView({behavior: 'smooth'})">
+            View my works
           </button>
         </div>
         <div class="hero-image">
@@ -96,7 +96,7 @@
             <div class="about-content">
                 <h3>About me!</h3>
                 <p>I'm a dedicated MERN Stack Developer with a strong passion for building full-stack web applications using MongoDB, Express.js, React.js, and Node.js. I enjoy solving real-world problems through clean and scalable code. With hands-on experience in both frontend and backend development, I create responsive, user-friendly, and dynamic web solutions. I'm always eager to learn new technologies and take on challenging projects.</p>
-                <button class="about-button">Contact me</button>
+                <button class="about-button" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">Contact me</button>
             </div>
             </div>
             </div>
@@ -112,6 +112,7 @@
         <div class="project-card-container">
             <div class="card">
               <img src="/images/ecom-project.png" alt="">
+              <h3>Ecommerce website</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure cupiditate aperiam sit expedita ratione officia commodi esse corporis sunt quos!</p>
               <div class="card-buttonContainer">
               <button onclick="navigateToProject(event)" data-link="https://react-ecommerce-gilt-rho.vercel.app/">View Project<i class='bx bx-link-external'></i></button>
@@ -119,6 +120,7 @@
             </div>
             <div class="card">
               <img src="/images/quiz-project.png" alt="">
+              <h3>Online quiz</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure cupiditate aperiam sit expedita ratione officia commodi esse corporis sunt quos!</p>
               <div class="card-buttonContainer">
               <button onclick="navigateToProject(event)" data-link="https://react-quiz-jet-three.vercel.app/">View Project <i class='bx bx-link-external'></i></button>
@@ -126,6 +128,7 @@
             </div>
             <div class="card">
               <img src="/images/book-management.jpeg" alt="">
+              <h3>Books Management</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure cupiditate aperiam sit expedita ratione officia commodi esse corporis sunt quos!</p>
               <div class="card-buttonContainer">
                 <button onclick="navigateToProject(event)" data-link="books.html">View Project <i class='bx bx-link-external'></i></button>

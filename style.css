@@ -786,6 +786,12 @@ justify-content: center;
   height: 50%;
 }
 
+.card h3{
+  color: rgb(195, 195, 195);
+  margin-top: 10px;
+  padding-left: 10px;
+}
+
 .card p{
   color: rgb(104, 104, 104);
   font-size: 1em;
