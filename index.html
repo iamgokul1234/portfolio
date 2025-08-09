@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section id="home" class="header-section">
+      <header>
+        <nav class="nav-bar">
+          <div class="main-logo">
+            <a id="gradient-text" href="#home">Portfolio</a>
+            
+          </div>
+
+          <div class="navs">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#project">Project</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">contact</a>
+          </div>
+
+          <div class="social-icons">
+            <a href="https://github.com/iamgokul1234"><i class="bx bxl-github"></i></a>
+            <a href="https://www.linkedin.com/in/gokulakrishnan-sivakumar/"><i class="bx bxl-linkedin"></i></a>
+            <a href="mailto:gokulakrish9345@gmail.com"><i class="bx bx-envelope"></i></a>
+          </div>
+          
+          <div class="menu-icon"><i class='bx bx-menu'></i></div>
+
+        </nav>
+      </header>
+
+      <div class="sidebar">
+        <div class="close-icon">
+          <i class='bx bx-x'></i>
+        </div>
+
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#project">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="mobile-social-icons">
+          <a href="https://github.com/iamgokul1234"><i class='bx bxl-github'></i></a>
+          <a href="https://www.linkedin.com/in/gokulakrishnan-sivakumar"><i class='bx bxl-linkedin-square'></i></a>
+          <a href="mailto:gokulakrish9345@gmail.com"><i class='bx bx-envelope'></i></a>
+        </div>
+      </div>
+
+      <div class="hero-section">
+        <div class="hero-content">
+          <h1>Hi, I'am <span id="gradient-text">Gokulakrishnan</span></h1>
+          <h2><span id="gradient-text">Fullstack</span> Developer</h2>
+          <p>
+            I build fast, scalable, and dynamic web applications.Passionate
+            about turning ideas into real-world solutions with clean code and
+            responsive design.
+          </p>
+          <button  class="hero-button">
+            View my work
+          </button>
+        </div>
+        <div class="hero-image">
+          <img src="images\background_less.png" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <!-- About section -->
+    <section id="about" class="about-section">
+        <div class="about-container">
+            <h2 id="gradient-text">About me</h2>
+            <div class="content-box">
+            <div class="about-image">
+                <img src="./images/about-portfolio.png" alt=""/>
+            </div>
+            <div class="about-content">
+                <h3>About me!</h3>
+                <p>I'm a dedicated MERN Stack Developer with a strong passion for building full-stack web applications using MongoDB, Express.js, React.js, and Node.js. I enjoy solving real-world problems through clean and scalable code. With hands-on experience in both frontend and backend development, I create responsive, user-friendly, and dynamic web solutions. I'm always eager to learn new technologies and take on challenging projects.</p>
+                <button class="about-button">Contact me</button>
+            </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project section -->
+     <section id="project" class="project-section">
+      <div class="project-container">
+        <div class="project-title">
+          <h3 id="gradient-text" >Project work</h3>
+        </div>
+        <div class="project-card-container">
+            <div class="card">
+              <img src="/images/ecom-project.png" alt="">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure cupiditate aperiam sit expedita ratione officia commodi esse corporis sunt quos!</p>
+              <div class="card-buttonContainer">
+              <button onclick="navigateToProject(event)" data-link="https://react-ecommerce-gilt-rho.vercel.app/">View Project<i class='bx bx-link-external'></i></button>
+              </div>
+            </div>
+            <div class="card">
+              <img src="/images/quiz-project.png" alt="">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure cupiditate aperiam sit expedita ratione officia commodi esse corporis sunt quos!</p>
+              <div class="card-buttonContainer">
+              <button onclick="navigateToProject(event)" data-link="https://react-quiz-jet-three.vercel.app/">View Project <i class='bx bx-link-external'></i></button>
+              </div>
+            </div>
+            <div class="card">
+              <img src="/images/book-management.jpeg" alt="">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure cupiditate aperiam sit expedita ratione officia commodi esse corporis sunt quos!</p>
+              <div class="card-buttonContainer">
+                <button onclick="navigateToProject(event)" data-link="books.html">View Project <i class='bx bx-link-external'></i></button>
+              </div>
+              
+            </div>
+          </div>
+      </div>
+     </section>
+
+     <!-- Skill section -->
+      <section id="skills" class="skills-section">
+        <div class="skill-heading">
+          <h2 id="gradient-text" >Skills section</h2>
+        </div>
+        <div class="skills-container">
+          <div class="front-end">
+            <h3 id="gradient-text-subHeading"><i class='bx bx-laptop'></i> Front-End</h3>
+            <p>Front-end MERN developer skilled in building responsive, user-friendly web interfaces using React, JavaScript, and modern UI frameworks, with a strong focus on performance and seamless user experience</p>
+          </div>
+          <div class="brain-img">
+            <img src="/images/digital brain (2).png" alt=""/>
+          </div>
+          <div class="back-end">
+            <h3 id="gradient-text-subHeading"><i class='bx bxs-cog' ></i> Back-End</h3>
+            <p>Back-end MERN developer proficient in building secure, scalable server-side applications using Node.js, Express, and MongoDB, with a focus on API design, database optimization, and robust application performance.</p>
+          </div>
+        </div>
+
+
+        <div class="slider" reverse="true" style="
+        --width: 100px;
+        --height: 100px;
+      --quantity: 8"> 
+      
+      <div class="list">
+        <div class="item" style="--position: 1 "><img src="images/1.png" alt="slider-image"></div>
+        <div class="item" style="--position: 2 "><img src="images/2.png" alt="slider-image"></div>
+        <div class="item" style="--position: 3 "><img src="images/3.png" alt="slider-image"></div>
+        <div class="item" style="--position: 4 "><img src="images/4.png" alt="slider-image"></div>
+        <div class="item" style="--position: 5 "><img src="images/5.png" alt="slider-image"></div>
+        <div class="item" style="--position: 6 "><img src="images/6.png" alt="slider-image"></div>
+        <div class="item" style="--position: 7 "><img src="images/7.png" alt="slider-image"></div>
+        <div class="item" style="--position: 8 "><img src="images/8.png" alt="slider-image"></div>
+      </div>
+        </div>
+      </section>
+
+      <!-- Contact section -->
+       <section id="contact" class="contact-section">
+        <div class="contact-heading">
+          <h3 id="gradient-text" >Contact Me</h3>
+        </div>
+        <div class="contact-container">
+          <div class="contact-box1">
+            <a href="#"><i class='bx bx-phone-call'></i> +91 93457 89315</a>
+            <a href="https://www.linkedin.com/in/gokulakrishnan-sivakumar/"><i class='bx bxl-linkedin-square'></i> contact example.com</a>
+            <a href="mailto:gokulakrish9345@gmail.com"><i class='bx bxl-gmail'></i> gokulakrish9345@gmail.com</a>
+          </div>
+          <div class="contact-box2">
+            <p>Full Name</p>
+          <input type="text" placeholder="Your Full Name">
+
+          <p>Email Address</p>
+          <input type="text" placeholder="Your Email">
+
+          <p>Your Message</p>
+          <textarea name="message" class="mess" placeholder="Share your thoughts..."></textarea>
+
+          <div class="contact-buttonContainer">
+            <button><i class='bx bx-send'></i> Send message</button>
+          </div>
+          
+
+          </div>
+        </div>
+       </section>
+
+    <script src="index.js"></script>
+  </body>
+</html>
