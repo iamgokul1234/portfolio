@@ -51,8 +51,7 @@ body {
   margin: 0;
   background-color: black;
   color: #ffff;
-  position: relative;
-  border: 0.25px solid lightgray;
+  border-bottom: 0.25px solid lightgray;
   box-shadow: 0 4px 6px rgba(211, 211, 211, 0.3);
 }
 
@@ -302,6 +301,37 @@ h2 {
   .social-icons {
     display: none;
   }
+
+  /* Portrait mode */
+@media only screen and (max-width: 480px) and (max-height: 851px) {
+  .navs {
+    display: none; /* Hide nav links */
+  }
+  .menu-icon {
+    display: block; /* Show menu icon */
+  }
+  .hero-section {
+    flex-direction: column;
+    height: auto;
+  }
+  .hero-content {
+    width: 100%;
+    left: 0;
+    bottom: auto;
+    text-align: center;
+  }
+  .hero-image {
+    width: 100%;
+    height: auto;
+    position: static;
+  }
+}
+
+/* Landscape mode */
+@media only screen and (max-width: 851px) and (max-height: 393px) {
+  /* Adjust styles for horizontal view */
+}
+
 
   /* Hero Section */
   .hero-section {
@@ -586,6 +616,58 @@ h2 {
   cursor: pointer;
 }
 
+@media only screen and (max-width: 480px) and (max-height: 851px) {
+  .about-section {
+    height: auto; /* Let content define height */
+    padding: 20px 0;
+  }
+
+  .about-container {
+    width: 95%;
+    height: auto;
+    margin: 10px auto;
+  }
+
+  .content-box {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center;
+    position: static; /* Remove absolute positioning */
+    height: auto;
+  }
+
+  .about-image {
+    width: 100%; /* Full width on mobile */
+    height: auto;
+    margin: 10px 0;
+  }
+
+  .about-image img {
+    border-radius: 10px;
+  }
+
+  .about-content {
+    width: 100%; /* Full width for text */
+    height: auto;
+    margin: 10px 0;
+    padding: 20px;
+    text-align: center; /* Center text for mobile */
+  }
+
+  .about-content h3 {
+    font-size: 1.2em;
+    text-align: center;
+  }
+
+  .about-content p {
+    font-size: 0.95em;
+  }
+
+  .about-button {
+    width: 80%;
+    font-size: 1em;
+  }
+}
+/* Mobile view */
 @media screen and (max-width: 360px) and (max-height: 740px) {
   .about-section {
     height: auto;
@@ -878,6 +960,70 @@ justify-content: center;
   }
 }
 
+@media screen and (max-width: 480px) and (max-height: 851px) {
+  .project-section {
+    height: auto; /* Let content grow */
+    padding: 20px 0;
+  }
+
+  .project-container {
+    width: 95%;
+    height: auto;
+    margin: 10px auto;
+  }
+
+  .project-title {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  .project-title h3 {
+    font-size: 1.8em; /* Smaller font for mobile */
+    padding-top: 20px;
+    text-align: center;
+  }
+
+  .project-card-container {
+    flex-direction: column; /* Stack cards vertically */
+    align-items: center;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .card {
+    width: 90%; /* Fit in mobile width */
+    height: auto;
+    margin: 15px auto;
+  }
+
+  .card img {
+    height: 180px; /* Keep image height fixed */
+    object-fit: cover;
+  }
+
+  .card h3 {
+    font-size: 1.1em;
+    padding-left: 10px;
+  }
+
+  .card p {
+    font-size: 0.9em;
+    padding: 15px;
+    line-height: 1.4em;
+  }
+
+  .card-buttonContainer {
+    justify-content: center;
+  }
+
+  .card button {
+    padding: 6px 15px;
+    font-size: 0.85em;
+  }
+}
+
+
 /* Tab view */
 @media screen and (max-width: 768px) and (max-height: 1024px) {
 
@@ -1122,6 +1268,91 @@ mask-image: linear-gradient(to right, transparent, #000 10% 90%, transparent);
 .slider .item:hover{
   filter: grayscale(0);
 }
+
+
+@media screen and (max-width: 480px) and (max-height: 851px) {
+  .skills-section {
+    height: auto;
+    padding: 20px 0;
+  }
+
+  .skill-heading h2 {
+    font-size: 1.8em;
+    padding-top: 20px;
+    top: 0;
+    position: static;
+  }
+
+  .skills-container {
+    flex-direction: column; /* Stack vertically */
+    height: auto;
+    gap: 20px;
+  }
+
+  .front-end, 
+  .back-end {
+    width: 90%; /* Full width on mobile */
+    height: auto;
+    margin: 15px 0;
+    padding: 15px;
+    text-align: center;
+  }
+
+  .front-end h3,
+  .back-end h3 {
+    font-size: 1.3em;
+    margin-top: 20px;
+    justify-content: center;
+  }
+
+  .front-end h3 i,
+  .back-end h3 i {
+    position: static;
+    margin-right: 8px;
+  }
+
+  .front-end p,
+  .back-end p {
+    font-size: 0.9em;
+    padding: 10px;
+    line-height: 1.4em;
+  }
+
+  .brain-img {
+    width: 80%;
+    height: auto;
+    margin: 20px auto;
+  }
+
+  .brain-img img {
+    border-radius: 10px;
+  }
+
+  /* Slider adjustments */
+  .slider {
+    width: 100%;
+    margin: 20px 0;
+    -webkit-mask-image: none;
+    mask-image: none;
+  }
+
+  .slider .list {
+    flex-wrap: nowrap;
+  }
+
+  .slider .list .item {
+    width: 150px; /* Smaller items for mobile */
+    height: auto;
+    position: static;
+    animation: none;
+  }
+
+  .slider .list .item img {
+    width: 100%;
+    height: auto;
+  }
+}
+
 
 /*Skills Mobile view */
 @media (max-width: 360px) and (max-height: 740px) {
@@ -1403,6 +1634,73 @@ align-items: center;
   align-items: center;
   padding-left: 115px;
 }
+
+
+@media screen and (max-width: 480px) and (max-height: 851px) {
+  .contact-section {
+    height: auto;
+    padding: 20px 0;
+  }
+
+  .contact-heading {
+    width: 100%;
+    height: auto;
+    position: static;
+    margin-bottom: 20px;
+    justify-content: center;
+  }
+
+  .contact-heading h3 {
+    font-size: 1.8em;
+    text-align: center;
+  }
+
+  .contact-container {
+    flex-direction: column; /* Stack content vertically */
+    height: auto;
+    gap: 20px;
+  }
+
+  .contact-box1,
+  .contact-box2 {
+    width: 90%;
+    height: auto;
+    margin: 10px auto;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .contact-box1 a {
+    font-size: 1.2em;
+    padding-left: 0;
+    text-align: center;
+    display: block;
+  }
+
+  .contact-box2 input {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .mess {
+    width: 100%;
+    max-width: 100%;
+    height: 150px;
+    font-size: 14px;
+  }
+
+  .contact-buttonContainer {
+    justify-content: center;
+    padding-left: 0;
+    margin-top: 15px;
+  }
+
+  .contact-box2 button {
+    padding: 10px 20px;
+    font-size: 0.9em;
+  }
+}
+
 
 /* Mobile view */
 @media (max-width: 360px) and (max-height: 740px) {
