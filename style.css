@@ -556,13 +556,14 @@ h2 {
   color: white;
   border: 1px solid rgb(255, 208, 155);
   line-height: 1.5em;
-  padding: 40px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   border-radius: 20px;
   text-align: left;
+  padding: 20px
 }
 
 .about-content h3 {
