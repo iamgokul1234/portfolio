@@ -52,7 +52,6 @@ body {
   background-color: black;
   color: #ffff;
   position: relative;
-  border: 0.25px solid lightgray;
   border-bottom: 0.25px solid lightgray;
   box-shadow: 0 4px 6px rgba(211, 211, 211, 0.3);
 }
