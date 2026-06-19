@@ -36,7 +36,7 @@ export const experience: ExperienceEntry[] = [
     role: 'Full Stack Developer',
     startDate: 'April 2025',
     endDate: 'June 2026',
-    location: 'Remote',
+    location: 'Onsite - Coimbatore',
     description: [
       'Developed and deployed 10+ serverless REST APIs using AWS Lambda, Node.js, and Express.js, improving API response times by ~35% and reducing infrastructure costs in production.',
       'Built responsive React.js/TypeScript applications with Redux Toolkit for centralized state management, enabling seamless frontend-backend integration across multiple product modules.',
