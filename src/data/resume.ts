@@ -73,6 +73,17 @@ export const projects: Project[] = [
     liveUrl: 'https://ai-interview-assistant-beta-blond.vercel.app/login',
     featured: true,
   },
+  {
+    id: 'ai-code-review',
+    title: 'AI Code Review Platform',
+    description:
+      'A full-stack platform that automates the first pass of code review by combining ESLint static analysis with Google Gemini AI, triggered on-demand via a web UI or automatically on GitHub Pull Requests via webhooks, with results posted as PR comments.',
+    tech: ['Node.js', 'Express.js', 'MongoDB', 'Mongoose', 'JWT', 'bcryptjs', 'Octokit', 'ESLint (Node API)', 'React.js', 'React Router', 'Gemini API', 'GitHub Webhooks', 'Render', 'Vercel'],
+    categories: ['AI', 'Full Stack'],
+    githubUrl: 'https://github.com/iamgokul1234/ai-code-review-platform',
+    liveUrl: 'https://ai-code-review-platform-neon.vercel.app/',
+    featured: true,
+  },
 ];
 
 // ─── Achievements ─────────────────────────────────────────────────────────────
@@ -131,6 +142,7 @@ export const skillGroups: SkillGroup[] = [
       { name: 'React.js' },
       { name: 'TypeScript' },
       { name: 'Redux Toolkit' },
+      { name: 'React Router' },
     ],
   },
   {
@@ -140,6 +152,9 @@ export const skillGroups: SkillGroup[] = [
       { name: 'Express.js' },
       { name: 'REST APIs' },
       { name: 'JWT Authentication' },
+      { name: 'Mongoose' },
+      { name: 'bcryptjs' },
+      { name: 'Webhook Integration' },
     ],
   },
   {
@@ -163,6 +178,10 @@ export const skillGroups: SkillGroup[] = [
     skills: [
       { name: 'Git / GitHub' },
       { name: 'Jira / Agile' },
+      { name: 'Octokit (GitHub API)' },
+      { name: 'ESLint (Node API)' },
+      { name: 'Render' },
+      { name: 'Vercel' },
     ],
   },
 ];
