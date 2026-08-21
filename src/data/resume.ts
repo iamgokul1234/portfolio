@@ -84,6 +84,28 @@ export const projects: Project[] = [
     liveUrl: 'https://ai-code-review-platform-neon.vercel.app/',
     featured: true,
   },
+  {
+    id: 'foodly',
+    title: 'Foodly — Food Ordering & Recipe Discovery Platform',
+    description:
+      'Built a modern, responsive food ordering and recipe discovery application. Implemented recipe exploration, search, cart management, checkout, order tracking, and reusable UI components. Added Axios API integration, response caching, loading/error states, and responsive UX to deliver a fast and seamless food-ordering experience.',
+    tech: ['React 19', 'TypeScript', 'Tailwind CSS', 'Redux Toolkit', 'Vite', 'Axios'],
+    categories: ['Frontend', 'Web App'],
+    githubUrl: 'https://github.com/iamgokul1234/Foodly---Food-App',
+    liveUrl: 'https://foodly-food-app.vercel.app/',
+    featured: true,
+  },
+  {
+    id: 'eventix-ticket-booking',
+    title: 'Eventix — High-Concurrency Ticket Booking System',
+    description:
+      'Engineered a production-grade ticket booking and real-time seat reservation platform using the MERN stack. Designed a high-concurrency architecture utilizing MongoDB multi-document ACID transactions to guarantee zero double-booking and zero double-spending. Features include an interactive real-time seat map, atomic 5-minute seat holds, custom idempotency, and an integrated digital wallet with append-only ledger logging for instant bookings and refunds.',
+    tech: ['React 18', 'Node.js', 'Express.js', 'MongoDB Atlas', 'TypeScript', 'Tailwind CSS', 'Vite', 'Zod'],
+    categories: ['Full Stack', 'Web App'],
+    githubUrl: 'https://github.com/iamgokul1234/Eventix--Ticket-Booking-',
+    liveUrl: 'https://eventix-ticket-booking-client-4ypc05huc.vercel.app/',
+    featured: true,
+  }
 ];
 
 // ─── Achievements ─────────────────────────────────────────────────────────────
