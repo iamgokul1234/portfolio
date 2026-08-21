@@ -17,7 +17,9 @@ export type ProjectCategory =
   | 'AI'
   | 'E-Commerce'
   | 'Fintech'
-  | 'Backend';
+  | 'Backend'
+  | 'Frontend'
+  | 'Web App';
 
 export interface Project {
   id: string;
